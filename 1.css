@@ -1,5 +1,7 @@
 :root {
     --main-font-color: rgb(45, 45, 45);
+    --secondary-color: rgb(145, 41, 41);
+    --hover-color: beige;
 }
 * {
     margin: 0;
@@ -12,7 +14,7 @@
 }
 
 main {
-    outline: 3px solid rgb(145, 41, 41);
+    outline: 3px solid var(--secondary-color);
     padding-top: 5vh;
     padding-bottom: 5vh;
     margin-left: 25vw;
@@ -40,7 +42,7 @@ p {
 #pageHeader {
     /* background-color: aliceblue; */
     padding-top: 2vh;
-    outline: 3px solid rgb(145, 41, 41);
+    outline: 3px solid var(--secondary-color);
     margin-left: 25vw;
     margin-bottom: 0;
     width: 50vw;
@@ -51,11 +53,13 @@ p {
 }
 
 #mainNav {
-    background-color: rgb(145, 41, 41);
+    background-color: var(--secondary-color);
     padding: 15px;
 }
 
 #mainNav > a {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     border: 1px solid transparent;
     margin-left: 4px;
@@ -65,6 +69,10 @@ p {
 
 #mainNav > a:hover {
     border: 1px solid black;
-    background-color: beige;
-    color: black;
+    background-color: var(--hover-color);
+    color: var(--main-font-color);
+}
+
+#mainNav > :nth-child(3) {
+    margin-left: auto;
 }
