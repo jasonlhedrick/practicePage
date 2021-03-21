@@ -1,50 +1,70 @@
+:root {
+    --main-font-color: rgb(45, 45, 45);
+}
 * {
     margin: 0;
 }
 
 * + * {
     margin-top: 2em;
-    line-height: 160%;
+    line-height: 150%;
     font-size: 1.2rem;
 }
 
-header {
-    /* background-color: aliceblue; */
-    margin-left: 25vw;
-}
-
 main {
-    /* outline: 1px solid black; */
+    outline: 3px solid rgb(145, 41, 41);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-left: 25vw;
+    margin-top: 0;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section {
-    /* background: pink; */
+header {
+    color: var(--main-font-color);
 }
 
+/* section {
+    background: pink;
+} */
+
 p {
-    color: rgb(45, 45, 45);
+    color: var(--main-font-color);
     width: 55ch;
 }
 
-#mainNav {
-    border: 2px solid transparent;
-    border-radius: 25px;
-    background-color: beige;
+
+#pageHeader {
+    /* background-color: aliceblue; */
+    padding-top: 2vh;
+    outline: 3px solid rgb(145, 41, 41);
+    margin-left: 25vw;
+    margin-bottom: 0;
     width: 50vw;
 }
+
+#pageHeader > h1 {
+    margin-left: 5vw;
+}
+
+#mainNav {
+    background-color: rgb(145, 41, 41);
+    padding: 15px;
+}
+
 #mainNav > a {
+    color: white;
     border: 1px solid transparent;
     margin-left: 4px;
     margin-right: 4px;
-    padding: 4px;
+    padding: 8px;
 }
 
 #mainNav > a:hover {
     border: 1px solid black;
-    border-radius: 15px;
     background-color: beige;
     color: black;
 }
