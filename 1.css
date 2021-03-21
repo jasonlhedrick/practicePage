@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+* + * {
+    margin-top: 2em;
+    line-height: 160%;
+    font-size: 1.2rem;
+}
+
+header {
+    /* background-color: aliceblue; */
+    margin-left: 25rem;
+}
+
+main {
+    /* outline: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    /* background: pink; */
+}
+
+p {
+    width: 55ch;
+}
+
+#mainNav > a {
+    border: 1px solid transparent;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 4px;
+}
+
+#mainNav > a:hover {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: beige;
+    color: black;
+}
