@@ -10,7 +10,7 @@
 
 header {
     /* background-color: aliceblue; */
-    margin-left: 25rem;
+    margin-left: 25vw;
 }
 
 main {
@@ -25,9 +25,16 @@ section {
 }
 
 p {
+    color: rgb(45, 45, 45);
     width: 55ch;
 }
 
+#mainNav {
+    border: 2px solid transparent;
+    border-radius: 25px;
+    background-color: beige;
+    width: 50vw;
+}
 #mainNav > a {
     border: 1px solid transparent;
     margin-left: 4px;
