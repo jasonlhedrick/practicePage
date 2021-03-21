@@ -1,8 +1,14 @@
+/* Variables  */
 :root {
+    --element-width: 75vw;
+    --element-margin-left: 13vw;
     --main-font-color: rgb(45, 45, 45);
     --secondary-color: rgb(145, 41, 41);
     --hover-color: beige;
+    --border-size: 7px;
 }
+
+/* Global selectors */
 * {
     margin: 0;
 }
@@ -13,39 +19,41 @@
     font-size: 1.2rem;
 }
 
+/* Element selectors  */
 main {
-    outline: 3px solid var(--secondary-color);
+    outline: var(--border-size) solid var(--secondary-color);
     padding-top: 5vh;
     padding-bottom: 5vh;
-    margin-left: 25vw;
+    margin-left: var(--element-margin-left);
     margin-top: 0;
-    width: 50vw;
+    width: var(--element-width);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 
 header {
     color: var(--main-font-color);
 }
 
-/* section {
-    background: pink;
-} */
-
 p {
     color: var(--main-font-color);
-    width: 55ch;
+    width: 60ch;
 }
 
+/* Class selectors  */
+.post {
+    margin-left: 5vw;
+}
 
+/* ID Selectors */
 #pageHeader {
     /* background-color: aliceblue; */
     padding-top: 2vh;
-    outline: 3px solid var(--secondary-color);
-    margin-left: 25vw;
+    outline: var(--border-size) solid var(--secondary-color);
+    margin-left: var(--element-margin-left);
     margin-bottom: 0;
-    width: 50vw;
+    width: var(--element-width);
 }
 
 #pageHeader > h1 {
@@ -76,3 +84,5 @@ p {
 #mainNav > :nth-child(3) {
     margin-left: auto;
 }
+
+/* Media queries */
